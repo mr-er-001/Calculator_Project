@@ -1,2 +1,23 @@
 Console.WriteLine("My name is Muhammad Ehsan");
 Console.WriteLine("My roll no is 24-ST-033");
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Input first number
+        Console.Write("Enter first number: ");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+
+        // Input second number
+        Console.Write("Enter second number: ");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        // Subtracting the numbers
+        double result = num1 - num2;
+
+        // Displaying the result
+        Console.WriteLine($"The result of subtraction is: {result}");
+    }
+}
