@@ -1,2 +1,32 @@
 Console.WriteLine("My name is Muhammad Ehsan");
 Console.WriteLine("My roll no is 24-ST-033");
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            Console.Write("Enter the first number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (num2 == 0)
+            {
+                Console.WriteLine("Error: Division by zero is not allowed.");
+            }
+            else
+            {
+                double result = num1 / num2;
+                Console.WriteLine($"Result: {num1} / {num2} = {result}");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid input! Please enter numeric values.");
+        }
+    }
+}
