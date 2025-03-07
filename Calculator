@@ -6,6 +6,9 @@ class Program
 {
     static void Main()
     {
+ Subtraction
+ Subtraction
+ Additiona
         // Input first number
         Console.Write("Enter first number: ");
         double num1 = Convert.ToDouble(Console.ReadLine());
@@ -13,6 +16,54 @@ class Program
         // Input second number
         Console.Write("Enter second number: ");
         double num2 = Convert.ToDouble(Console.ReadLine());
+
+ Subtraction
+        // Subtracting the numbers
+        double result = num1 - num2;
+
+        // Displaying the result
+        Console.WriteLine($"The result of subtraction is: {result}");
+
+ Multiplication
+        // Input two numbers
+        Console.Write("Enter first number: ");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter second number: ");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        // Multiply numbers
+        double result = num1 * num2;
+
+        // Display result
+        Console.WriteLine($"The multiplication of {num1} and {num2} is: {result}");
+
+        try
+        {
+            Console.Write("Enter the first number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (num2 == 0)
+            {
+                Console.WriteLine("Error: Division by zero is not allowed.");
+            }
+            else
+            {
+                double result = num1 / num2;
+                Console.WriteLine($"Result: {num1} / {num2} = {result}");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid input! Please enter numeric values.");
+        }
+ main
+ main
+    }
+}
 
         // Calculate sum
         double sum = num1 + num2;
@@ -22,3 +73,4 @@ class Program
     }
 }
 
+ Additiona
